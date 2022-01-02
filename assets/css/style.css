@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap'); 
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .page {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: black;
+  }
+  
+  .main-box {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .body {
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .body a {
+    color: rgb(148, 137, 137);
+  }
+
+  .body a:hover,
+  .body a:focus {
+    text-decoration: none;
+  }
+  .body a:active {
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .section-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 36px;
+    padding-left: 60px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+
+  .section-title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 36px;
+  }
+  
+  .nav a,
+  .projects-title,
+  .projects-title:after,
+  .projects-item:hover {
+    transition: all 0.3s ease 0s;
+  }
+  
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #e6e6e6;
+  }
+
+  .information {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav a {
+    padding: 14px 10px;
+    line-height: 50px;
+    color: black;
+  }
+
+  .nav a:hover {
+    background-color: #a8b3ac;
+  }
+
+  .nav a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .left-area {
+    width: 100%;
+    color: white;
+    background-color: #363b44;
+  }
+  .left-figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: min-content;
+    background-color: #343945;
+  }
+  .photo {
+    width: 100%;
+    object-fit: cover;
+
+  }
+  .left-area .section-title {
+    background-color: rgba(255, 255, 255, 0.1);
+  } 
+  
+  .contact {
+    padding: 44px 0px 54px 0px;
+    background-color: #343945;
+  }
+  .contact-list {
+    list-style: none;
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
+  }
+
+  .contact-item {
+    margin-bottom: 25px;
+  }
+
+  .contact-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-item a {
+    display: block;
+  }
+  
+  .education {
+    padding: 54px 0px 54px 0px;
+  }
+
+  .education-list {
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .education-item {
+    margin-bottom: 25px;
+  }
+
+  .education-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .right-area .section-title {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .right-figure {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: min-content;
+  }
+  .main-info {
+    margin: 125px 80px 125px 60px;
+  }
+  .main-title {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  .main-info p {
+    font-size: 20px;
+  }
+  
+  .about-me {
+    padding: 0;
+    margin-bottom: 54px;
+  }
+  .about-me p {
+    margin: 0 60px 0 60px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .skills {
+    margin-bottom: 54px;
+  }
+  .skills-list {
+    margin: 0px 60px;
+    padding: 0;
+    padding-left: 20px;
+  }
+  
+  .code-example {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .projects {
+    margin-bottom: 30px;
+  
+  }
+
+  .projects-list {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 60px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    background-color: rgb(182, 179, 179);
+  }
+
+  .github {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .github::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .year {
+    justify-self: start;
+  }
+
+  .rsschool {
+    justify-self: end;
+    height: 32px;
+  }
+  
+  @media (min-width:  940px) {
+    .page-body {
+      max-width: 1280px;
+    }
+
+    .box {
+      grid-template-columns: 380px 1fr;
+    }
+
+    .rigth-figure {
+      display: none;
+    }
+
+    .projects-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+  }
+  
+  @media (max-width: 939px) {
+    .contact {
+      padding: 28px 0 35px;
+    }
+
+    .education {
+      padding: 35px 0;
+    }
+
+    .contact-list, 
+    .education-list {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .right-figure {
+      display: none;
+    }
+
+    .section-title {
+      margin-bottom: 26px;
+    }
+
+    .about-me,
+    .skills,
+    .code-example {
+      margin-bottom: 35px;
+    }
+
+    .about-me p,
+    .skills-list,
+    .code-example details,
+    .projects-list {
+      margin: 0 30px;
+    }
+  }
+  
+  @media (max-width: 639px) {
+  
+    body.lock {
+      overflow: hidden;
+    }
+
+    header {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 50;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ccc;
+      z-index: 3;
+    }
+
+    .nav {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      padding-top: 50px;
+      width: 100%;
+      height: 100%;
+      background-color: #e6e6e6;
+      overflow: auto;
+      transition: all 0.3s ease 0s;
+      box-sizing: border-box;
+    }
+
+    .nav-list {
+      display: block;
+      overflow: auto;
+    }
+
+    .nav-item {
+      width: 100%;
+    }
+
+    .nav-item a {
+      display: block;
+      width: 100%;
+      padding: 0 0 0 25px;
+      box-sizing: border-box;
+    }
+
+    .nav.active {
+      top: 0;
+    }
+
+    .information {
+      display: block;
+      position: relative;
+      margin-left: 20px;
+      width: 100px;
+      height: 20px;
+      font: inherit;
+      background-color: #ccc;
+      border: none;
+      cursor: pointer;
+      z-index: 4;
+    }
+
+    .information::before,
+    .information::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      left: 0;
+      background-color: black;
+      transition: all 0.3s ease 0s;
+    }
+
+    .information::before {
+      top: 0;
+    }
+
+    .information::after {
+      bottom: 0;
+    }
+
+    .line {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      left: 0;
+      top: 8px;
+      background-color: black;
+      transition: all 0.3s ease 0s;
+    }
+
+    .information-name {
+      position: absolute;
+      top: 0;
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .information.active::before {
+      transform: rotate(45deg);
+      top: 8px;
+    }
+
+    .information.active::after {
+      transform: rotate(-45deg);
+      bottom: 8px;
+    }
+
+    .information.active .line {
+      transform: scale(0);
+    }
+
+    .information:hover::before {
+      transform: rotate(7deg);
+    }
+
+    .information:hover::after {
+      transform: rotate(-7deg);
+    }
+
+    .information.active:hover::before {
+      transform: rotate(38deg);
+    }
+
+    .information.active:hover::after {
+      transform: rotate(-38deg);
+    }
+    
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
+
+    .left-area  {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left-figure {
+      display: none;
+    }
+
+    .contact {
+      order: 1;
+      width: 100%;
+      padding: 35px 0;
+      padding-top: 50px;
+      background-color: #2c323d;
+    }
+    .education {
+      order: 0;
+      width: 100%;
+      padding: 35px 0;
+      padding-top: 50px;
+      background-color: #343945;
+    }
+
+    .right-area {
+      order: -1;
+      width: 100%;
+    }
+
+    .right-figure:nth-child(n+2) {
+      padding-top: 50px;
+      margin-bottom: 0;
+    }
+
+    .right-figure {
+      display: block;
+    
+    }
+    .main-info {
+      margin: 50px 40px 50px 40px;
+    }
+
+    .projects {
+      padding-bottom: 28px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
